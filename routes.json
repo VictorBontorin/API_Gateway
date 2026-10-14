@@ -1,0 +1,4 @@
+[
+  { "prefix": "/whoami", "upstream": "http://whoami:80", "strip_prefix": true, "auth": true, "rate_limit": 10 },
+  { "prefix": "/public", "upstream": "http://whoami:80", "strip_prefix": true, "auth": false, "rate_limit": 30 }
+]

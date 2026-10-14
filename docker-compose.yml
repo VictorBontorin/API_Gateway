@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:7-alpine
+  whoami:
+    image: traefik/whoami
+  gateway:
+    build: .
+    env_file: .env.example
+    environment:
+      REDIS_ADDR: redis:6379
+      ROUTES_FILE: /routes.json
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - whoami
