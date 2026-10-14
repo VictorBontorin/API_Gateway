@@ -2,7 +2,7 @@
 
 A lightweight API gateway written in Go. It sits between clients and internal services, centralizing authentication, rate limiting, routing and observability.
 
-![CI](https://github.com/VictorBontorin/API_Gateway/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/VictorBontorin/API_Gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/VictorBontorin/API_Gateway/actions/workflows/ci.yml)
 
 ## Features
 
